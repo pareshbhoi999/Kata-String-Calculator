@@ -128,7 +128,16 @@ public class StringCalculator {
 		String nums = m.group(2);
 		
 		return nums.split(delimeters); 
-		
-		
 	}
+	
+	
+	
+	public static String oddOrEven (int[] array) {
+	    int sum = 0;
+	    for (int i=0;i<array.length;i++) {
+	      sum += array[i];
+	    }
+	    
+	    return sum%2 == 0 ? "even" : "odd";
+	  }
 }
